@@ -1,0 +1,16 @@
+"use client";
+
+import UserMenu from "./UserMenu";
+
+interface HeaderProps {
+  title: string;
+}
+
+export default function Header({ title }: HeaderProps) {
+  return (
+    <header className="flex h-16 shrink-0 items-center justify-between border-b bg-white px-6">
+      <h1 className="text-xl font-semibold text-slate-900">{title}</h1>
+      <UserMenu />
+    </header>
+  );
+}
